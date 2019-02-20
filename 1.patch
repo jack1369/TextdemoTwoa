@@ -1,0 +1,48 @@
+Index: MainActivity.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- MainActivity.java	(revision )
++++ MainActivity.java	(revision )
+@@ -0,0 +1,13 @@
++package com.example.wb_lwx502637.textdemotwo;
++
++import android.support.v7.app.AppCompatActivity;
++import android.os.Bundle;
++
++public class MainActivity extends AppCompatActivity {
++
++    @Override
++    protected void onCreate(Bundle savedInstanceState) {
++        super.onCreate(savedInstanceState);
++        setContentView(R.layout.activity_main);
++    }
++}
+Index: App.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- App.java	(revision )
++++ App.java	(revision )
+@@ -0,0 +1,19 @@
++package com.example.wb_lwx502637.textdemotwo;
++
++import android.app.Application;
++
++import com.example.mylibrary.ToastUtils;
++
++/**
++ * Created by wb-lwx502637 on 2019/2/20.
++ */
++
++public class App extends Application {
++
++    @Override
++    public void onCreate() {
++        super.onCreate();
++
++        ToastUtils.logs();
++    }
++}
