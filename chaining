@@ -1,0 +1,13 @@
+gradle
+
+dependencies {
+	        implementation 'com.github.jack1369:TextdemoTwoa:Tag'
+	}
+  
+  
+  allprojects {
+		repositories {
+			...
+			maven { url 'https://jitpack.io' }
+		}
+	}
